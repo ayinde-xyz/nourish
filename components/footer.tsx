@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
   const date = new Date();
   return (
-    <footer className="mx-auto w-full text-center absolute inset-x-0 bottom-0 bg-white">
+    <footer className=" w-full text-center fixed inset-x-0 bottom-0 bg-white">
       <p className="py-3">
         We are just starting our journey, but <br /> we promise that it will be
         cool!
