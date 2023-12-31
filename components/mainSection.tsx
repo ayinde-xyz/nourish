@@ -1,13 +1,14 @@
 import React from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 const MainSection = () => {
   return (
-    <div className="mx-10">
+    <div className="mx-5 overscroll-x-contain w-full min-h-screen pb-12 overflow-x-hidden">
       <div className="">
         <div className="">
-          <h1 className="text-[40px] md:text-[62px] text-[#193924] font-bold pt-8 pb-0 leading-normal lg:leading-[90px] md:leading-[50px]">
+          <h1 className="text-[36px] md:text-[62px] text-[#193924] font-bold pt-8 pb-0 leading-normal lg:leading-[90px] md:leading-[50px]">
             Cultivate a Symphony of Nourishment!
           </h1>
           <p className="py-2 mb- md:py-4 text-[#878887] text-xs md/lg:text-2xl lg:leading-[40px]">
@@ -17,7 +18,7 @@ const MainSection = () => {
             your journey to a healthier, more vibrant you.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row space-y-4  h-4 lg:space-x-4 mx-4 ">
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0  h-4 md:space-x-4 ">
           <Input
             type="email"
             id="emailInput"
@@ -28,6 +29,15 @@ const MainSection = () => {
             Join Waitlist
           </Button>
         </div>
+      </div>
+      <div className=" -z-10">
+        <Image
+          className=""
+          src={"/laptop.png"}
+          alt="Laptop picture"
+          width={500}
+          height={500}
+        />
       </div>
     </div>
   );

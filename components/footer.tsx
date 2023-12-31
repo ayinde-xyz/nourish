@@ -1,10 +1,11 @@
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
   const date = new Date();
   return (
-    <footer className="mx-auto w-full text-center py-2 fixed bottom-0 bg-white">
+    <footer className="mx-auto w-full text-center absolute inset-x-0 bottom-0 bg-white">
       <p className="py-3">
         We are just starting our journey, but <br /> we promise that it will be
         cool!
@@ -21,11 +22,7 @@ const Footer = () => {
             <Linkedin />
           </a>
         </div>
-        {/* <div className="px-2">
-          <a href="#">
-           
-          </a>
-        </div> */}
+
         <div className="px-2">
           <a href="#">
             <Twitter />
@@ -39,6 +36,8 @@ const Footer = () => {
       </div>
       <p className="py-3 text-[#878887]">
         © All Rights Reserved. {date.getFullYear()} Nourish team
+        <br />
+        Made by <Link href={"https://twitter.com/ayinde_xyz"}>@ayinde_xyz</Link>
       </p>
     </footer>
   );
